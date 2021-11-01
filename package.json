@@ -1,0 +1,21 @@
+{
+  "name": "mbouton_tripplanner",
+  "version": "1.0.0",
+  "description": "Supply Hound Trip Planner API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Matilda Bouton",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "node-fetch": "^3.0.0"
+  }
+}
