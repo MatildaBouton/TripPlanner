@@ -117,7 +117,7 @@ const distance = function (lat1, lon1, lat2, lon2) {
     const radLat2 = Math.PI * lat2/180;
     const theta = lon1-lon2;
     const radTheta = Math.PI * theta/180;
-    const distance = Math.sin(radLat1) * Math.sin(radLat2) + Math.cos(radLat1) * Math.cos(radLat2) * Math.cos(radTheta);
+    let distance = Math.sin(radLat1) * Math.sin(radLat2) + Math.cos(radLat1) * Math.cos(radLat2) * Math.cos(radTheta);
   
     if (distance > 1) {
       distance = 1;
