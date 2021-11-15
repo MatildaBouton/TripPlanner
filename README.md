@@ -12,7 +12,7 @@ npm run start
 In a seperate terminal window, start the database with the following command: 
 mongod --dbpath=<path to /data/db>
 
-Note: it defaults to /data/db, but in the newest version of MacOS it does not allow this to be created in the room directory. I had to create it in my user directory. 
+Note: it defaults to /data/db, but in the newest version of MacOS it does not allow this to be created in the root directory. I had to create it in my user directory. 
 
 After the server and database are running, the API calls can be tested using PostMan at http://localhost:3000
 
