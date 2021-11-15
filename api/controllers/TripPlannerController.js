@@ -31,7 +31,8 @@ const findCountryByID = function(req, res) {
 
 const getCitiesByLatLon = function(req, res) {
   Country.find({longitude: {$lte: req.query.maxLon, $gte: req.query.minLon},
-                latitude: {$lte: req.query.maxLat, $gte: req.query.minLat}},
+                latitude: {$lte: req.query.maxLat, $gte: req.query.minLat},
+                capitalCity: {$ne: "", $exists: true}},
                 {capitalCity: 1, _id: 0}, 
                 function (err, data) {
                   if (err)
